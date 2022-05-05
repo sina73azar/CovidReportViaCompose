@@ -1,0 +1,19 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "CovidReportViaCompose"
+println("GRADLE_HOME $gradle.gradleHomeDir")
+println("GRADLE_USER_HOME $gradle.gradleUserHomeDir")
+
+include ':app'
