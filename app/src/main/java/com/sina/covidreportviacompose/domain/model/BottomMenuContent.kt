@@ -1,4 +1,4 @@
-package com.sina.covidreportviacompose
+package com.sina.covidreportviacompose.domain.model
 
 import androidx.annotation.DrawableRes
 

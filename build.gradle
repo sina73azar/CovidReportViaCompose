@@ -1,22 +1,21 @@
 buildscript {
     ext {
-        compose_version = '1.0.1'
+        compose_version = '1.1.1'
     }
-    /*println("all tasks --->${project.getTasks()}")
-    println("project name --->${project.getDisplayName()}")
-    println("project artifact --->${project.getArtifacts()}")
-    println("project build dir--->${project.getBuildDir()}")*/
-/*    copy(){
-        into "$buildDir/tmp"
-        from('custom-resources'){
-            println("hey there")
-        }
-    }*/
+    repositories {
+        mavenCentral()
+        google()
+    }
+
+    dependencies {
+        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.40.5'
+
+    }
 }// Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
-    id 'com.android.application' version '7.1.0' apply false
-    id 'com.android.library' version '7.1.0' apply false
-    id 'org.jetbrains.kotlin.android' version '1.5.21' apply false
+    id 'com.android.application' version '7.2.0' apply false
+    id 'com.android.library' version '7.2.0' apply false
+    id 'org.jetbrains.kotlin.android' version '1.6.10' apply false
 }
 
 task clean(type: Delete) {

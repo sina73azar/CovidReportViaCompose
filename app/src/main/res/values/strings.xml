@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CovidReportViaCompose</string>
+    <string name="asset_statements" translatable="false">[{ \"include\": \"https://map.routaa.com/.well-known/assetlinks.json\" }]</string>
 </resources>

@@ -13,7 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "CovidReportViaCompose"
-println("GRADLE_HOME $gradle.gradleHomeDir")
-println("GRADLE_USER_HOME $gradle.gradleUserHomeDir")
-
 include ':app'
